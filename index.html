@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ouom — 把浏览器，还给工作与学习</title>
+<meta name="description" content="ouom（observable universe on mac）是一款原生 macOS 浏览器，内置 AI 助手、轻量办公套件与面向学生的学习工作台。数据仅存本机，离线可用。">
+<meta property="og:title" content="ouom — 把浏览器，还给工作与学习">
+<meta property="og:description" content="原生 macOS 浏览器。AI 助手、办公套件、学习工作台，全部数据留在本机。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="ouom 图标">ouom</a>
+    <div class="nav-links">
+      <a href="#capabilities">能力</a>
+      <a href="#browser">浏览</a>
+      <a href="#study">学习</a>
+      <a href="#privacy">隐私</a>
+      <a href="#specs">技术规格</a>
+      <a class="nav-cta" href="download/">下载</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">observable universe on mac</p>
+    <h1>ouom</h1>
+    <p class="sub">把浏览器，还给工作与学习。</p>
+    <p class="lede">一款为 macOS 打造的原生浏览器。以稳定的多标签浏览为底座，内置 AI 助手、轻量办公套件与面向学生的学习工作台。所有数据只保存在这台 Mac 上。</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="download/">免费下载 ouom</a>
+      <a class="btn btn-ghost" href="#capabilities">了解全部能力</a>
+    </div>
+    <p class="hero-meta">版本 0.1.0 · macOS 15 或更高版本 · Apple Silicon · 无需注册</p>
+
+    <div class="device reveal">
+      <div class="device-bar"><i></i><i></i><i></i><span>ouom://app/newtab/</span></div>
+      <img src="assets/newtab.jpg" alt="ouom 新标签页门户：顶部 ouom 能力六宫格、实时时钟与学习 / 小模型 / 浏览器状态小组件">
+    </div>
+  </div>
+</header>
+
+<section class="section" id="capabilities">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">一个窗口</span>
+      <h2>一天的事，从这里开始。</h2>
+      <p>新标签页把「ouom 能力」置于顶部首要位置。六项常用功能一键直达，常用网址、学习进度与本地模型状态集中呈现，全部数据由原生聚合，页面不发起网络请求。</p>
+    </div>
+    <div class="grid grid-3 reveal">
+      <div class="card">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3z"/><path d="M18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8L18 16z"/></svg></div>
+        <h3>AI 助手</h3>
+        <p>总结网页、辅助写作、读文档。默认由设备端共享小模型离线处理，可选配置云端后端。</p>
+        <span class="tag">默认离线 · 统计式 / 检索式模型</span>
+      </div>
+      <div class="card">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 016.5 3H20v15H6.5A2.5 2.5 0 004 20.5V5.5z"/><path d="M8 7h8M8 11h6"/></svg></div>
+        <h3>学习工作台</h3>
+        <p>集题、整合、分析、梳理、定制、复习与 AI 答疑。答案与解析可折叠，先作答后核对。</p>
+        <span class="tag">八模块 · ouom.study.v2</span>
+      </div>
+      <div class="card">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6V3z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></div>
+        <h3>文档</h3>
+        <p>轻量自研编辑器，原生 canonical 文档模型；AI 读写结构化内容，而非编辑器 DOM。</p>
+        <span class="tag">ouom://app/office/doc/</span>
+      </div>
+      <div class="card">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10M15 10v10"/></svg></div>
+        <h3>表格</h3>
+        <p>轻量表格视图，与 AI 助手通过同一份结构化模型互通，便于汇总与整理。</p>
+        <span class="tag">ouom://app/office/sheet/</span>
+      </div>
+      <div class="card">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M12 17v3M8 20h8"/></svg></div>
+        <h3>演示</h3>
+        <p>轻量演示视图，用于快速查看与整理大纲；延续内部页统一的安全策略。</p>
+        <span class="tag">ouom://app/office/slide/</span>
+      </div>
+      <div class="card">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7V3z"/><path d="M14 3v4h4"/><path d="M10 13c1.2-1 2.8-1 4 0M10 17c1.2-1 2.8-1 4 0"/></svg></div>
+        <h3>PDF 查看</h3>
+        <p>文本层查看器，支持阅读与摘取内容；当前版本不是完整的二进制 PDF 渲染器。</p>
+        <span class="tag">文本层视图</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section gray" id="browser">
+  <div class="wrap split reveal">
+    <div>
+      <h2>浏览，快而克制。</h2>
+      <p>ouom 自研浏览器外壳与桥接架构，渲染使用系统 WebKit。默认强制直连，规避系统级 WPAD / PAC 自动发现造成的漫长等待；页面在首个响应提交后即可用，不必等待所有子资源加载完毕。</p>
+      <ul class="list">
+        <li>多标签、地址栏、前进后退、历史与收藏，标签栏紧凑而对位清晰</li>
+        <li>无痕标签使用非持久化存储，绝不写入会话快照</li>
+        <li>完整浏览器标识兼容主流站点，渲染引擎仍为 WebKit</li>
+        <li>原生右键菜单、Edge 风格工具栏与按操作对象分层的应用菜单</li>
+      </ul>
+    </div>
+    <div class="shot"><img src="assets/browser.jpg" alt="ouom 主窗口：紧凑标签栏、地址栏与网页内容区"></div>
+  </div>
+</section>
+
+<section class="section" id="study">
+  <div class="wrap split reverse reveal">
+    <div class="shot"><img src="assets/study.jpg" alt="ouom 学习工作台：课程门户式首页与八个功能模块"></div>
+    <div>
+      <h2>设备端的智能，不把内容交给云端。</h2>
+      <p>学习助手采用两段式流水线：手机端负责拍照识别与结构化输出，ouom 只接收规定格式的文本，在本机完成判重、归类、难度估计、掌握度追踪与复习调度。AI 答疑只检索已入库的题目并标注来源。</p>
+      <ul class="list">
+        <li>标准答案、解析、解题步骤、易错点与考查要点一并收录</li>
+        <li>SimHash 判重、朴素贝叶斯归类、BKT 掌握度、SM-2 间隔复习</li>
+        <li>设备端共享小模型供 AI 助手与学习助手共用，可在线增量训练</li>
+        <li>它不是大语言模型，不具备生成式回答能力</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="privacy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">数据与隐私</span>
+      <h2>你的数据，只在这台 Mac 上。</h2>
+      <p>全部用户数据集中于单一本机目录，可核对、可定位、可清理。每次写入采用原子替换并保留上一份良好副本；文件损坏时自动恢复，无法恢复则隔离留证而不删除。</p>
+    </div>
+    <div class="metrics reveal">
+      <div class="metric"><strong>1 处</strong><span>统一数据目录</span></div>
+      <div class="metric"><strong>0600</strong><span>数据文件权限</span></div>
+      <div class="metric"><strong>原子</strong><span>写入与自动备份</span></div>
+      <div class="metric"><strong>0 次</strong><span>默认联网上传</span></div>
+    </div>
+    <div class="grid grid-3 reveal" style="margin-top:26px">
+      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+        <h3 style="color:#f5f5f7">本机存储</h3>
+        <p style="color:#a1a1a8">数据位于 ~/Library/Application Support/ouom/，目录权限 0700、文件权限 0600。设置页可直接查看文件清单、用途、占用与最近保存状态。</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+        <h3 style="color:#f5f5f7">凭据隔离</h3>
+        <p style="color:#a1a1a8">API Key 与访问令牌只存系统钥匙串，界面不回显明文，绝不写入数据文件。无痕标签与临时数据不落盘。</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1)">
+        <h3 style="color:#f5f5f7">基础隐私边界</h3>
+        <p style="color:#a1a1a8">当前阶段按设计仅实施基础保护：本机权限、凭据隔离与不上传。<strong style="color:#f5f5f7">尚未启用数据加密</strong>，也不提供密码自动填充、站点权限持久化与跨设备同步。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="specs">
+  <div class="wrap" style="max-width:880px">
+    <div class="section-head reveal">
+      <span class="kicker">技术规格</span>
+      <h2>清晰的能力边界。</h2>
+      <p>ouom 以可验证为原则：能做到的写明，尚未做到的同样写明。</p>
+    </div>
+    <table class="spec reveal">
+      <tr><th>系统要求</th><td>macOS 15 或更高版本 · Apple Silicon</td></tr>
+      <tr><th>技术栈</th><td>原生 Swift（SwiftUI + AppKit + WebKit）· Swift 6 严格并发</td></tr>
+      <tr><th>架构</th><td>9 个编译隔离的 SwiftPM library target，模块之间经协议、事件总线与能力注册表协作</td></tr>
+      <tr><th>渲染</th><td>系统 WebKit；自研浏览器外壳、导航、桥接与插件宿主</td></tr>
+      <tr><th>本地 AI</th><td>设备端统计式 / 检索式共享小模型（抽取式摘要、意图分类、BM25 问答、写作变换），不是大语言模型</td></tr>
+      <tr><th>云端 AI</th><td>可选 OpenAI 兼容后端，需用户自行配置凭据；默认不启用</td></tr>
+      <tr><th>内部页面</th><td>ouom:// 自定义协议，内容安全策略禁止外部连接</td></tr>
+      <tr><th>数据可靠性</th><td>原子写入、上一版本备份、损坏自动恢复、隔离留证、写入诊断</td></tr>
+      <tr><th>回归测试</th><td>37 项单元测试全部通过</td></tr>
+      <tr><th>许可</th><td>MIT</td></tr>
+    </table>
+    <p class="note">说明：办公套件为轻量自研编辑器，PDF 为文本层查看器；CloudKit 同步、插件独立沙箱与 GGUF 微调模型尚未启用。上述表述与当前版本实现一致。</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>准备好开始了吗？</h2>
+  <p>下载 ouom 0.1.0，无需注册，安装即可使用。</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="download/">前往下载</a>
+    <a class="btn btn-outline" href="https://github.com/apple-PC/ouom">查看源代码</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">产品介绍</a>
+      <a href="download/">下载</a>
+      <a href="https://github.com/apple-PC/ouom">GitHub</a>
+      <a href="https://afdian.com/a/apple-pc">爱发电</a>
+    </div>
+    <div>ouom · observable universe on mac · 0.1.0</div>
+    <div>由 apple-pc（天天向上）制作 · 采用 MIT 许可发布</div>
+  </div>
+</footer>
+
+<!-- 爱发电 · 固定底部说明条 -->
+<div class="afd-bar">
+  <span class="heart">♥</span>
+  <span>喜欢 ouom？可在 <a href="https://afdian.com/a/apple-pc" target="_blank" rel="noopener">爱发电</a> 支持作者，帮助我们持续完善。</span>
+</div>
+
+<!-- 爱发电 · 首次访问可关闭弹窗 -->
+<div class="afd-overlay" id="afdOverlay" role="dialog" aria-modal="true" aria-label="支持 ouom">
+  <div class="afd-card">
+    <button class="close" type="button" aria-label="关闭" data-afd-dismiss>×</button>
+    <div class="emblem">♥</div>
+    <h3>支持 ouom 的持续开发</h3>
+    <p>ouom 是独立开发的免费项目。如果它让你的工作与学习更顺手，欢迎通过爱发电给予支持。</p>
+    <a class="afd-primary" href="https://afdian.com/a/apple-pc" target="_blank" rel="noopener" data-afd-dismiss style="line-height:44px">前往爱发电</a>
+    <button class="afd-later" type="button" data-afd-dismiss>暂不，先看看</button>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

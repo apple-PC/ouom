@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>下载 ouom — 适用于 macOS 的原生浏览器</title>
+<meta name="description" content="下载 ouom 0.1.0 for macOS。原生 Swift + WebKit 浏览器，内置 AI 助手、办公套件与学习工作台，数据仅存本机。">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html"><img src="../assets/icon.png" alt="ouom 图标">ouom</a>
+    <div class="nav-links">
+      <a href="../index.html#capabilities">能力</a>
+      <a href="../index.html#browser">浏览</a>
+      <a href="../index.html#study">学习</a>
+      <a href="../index.html#privacy">隐私</a>
+      <a href="../index.html#specs">技术规格</a>
+      <a class="nav-cta" href="./">下载</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <h1>下载 ouom</h1>
+  <p>适用于 macOS 的原生浏览器 · 免费、无需注册、离线可用</p>
+</header>
+
+<main class="wrap" style="padding-bottom:96px">
+
+  <div class="download-card reveal">
+    <div class="download-top">
+      <img src="../assets/icon.png" alt="ouom 应用图标">
+      <div>
+        <h2>ouom 0.1.0</h2>
+        <p>observable universe on mac · macOS 通用构建（Apple Silicon）</p>
+      </div>
+    </div>
+    <div class="download-meta">
+      <div><span>版本</span><strong>0.1.0</strong></div>
+      <div><span>发布日期</span><strong>2026 年 11 月 14 日</strong></div>
+      <div><span>文件大小</span><strong>1.8 MB（zip）</strong></div>
+    </div>
+    <div class="download-actions">
+      <a class="btn btn-primary" href="./ouom-0.1.0.zip" download>下载 ouom 0.1.0</a>
+      <a class="btn btn-outline" href="../index.html">返回产品介绍</a>
+    </div>
+    <div class="sha mono"><b>SHA-256</b> &nbsp;a793ba0c1ee4010a8e9f4670270f04c02083980b2532afff61d47d80b7718f55</div>
+    <p class="note">下载后可在「终端」执行 <span class="mono">shasum -a 256 ouom-0.1.0.zip</span> 核对校验值。应用包经过 ad-hoc 签名，未启用 App Sandbox。</p>
+  </div>
+
+  <section class="section" style="padding-bottom:0">
+    <div class="section-head reveal">
+      <span class="kicker">安装</span>
+      <h2>三步即可开始使用。</h2>
+      <p>ouom 是标准 macOS 应用包，无需安装器，也不会在系统目录写入额外组件。</p>
+    </div>
+    <div class="steps reveal" style="max-width:760px;margin:0 auto">
+      <div class="step">
+        <div><h3>解压下载文件</h3><p>双击 <span class="mono">ouom-0.1.0.zip</span>，得到 <span class="mono">ouom.app</span>。</p></div>
+      </div>
+      <div class="step">
+        <div><h3>拖入「应用程序」文件夹</h3><p>把 <span class="mono">ouom.app</span> 拖到 <span class="mono">/Applications</span>。建议安装到此处，可保持钥匙串条目的签名稳定。</p></div>
+      </div>
+      <div class="step">
+        <div><h3>首次打开</h3><p>由于应用未经过 Apple 公证，首次启动请在访达中<strong>右键点击图标并选择「打开」</strong>，在提示中确认一次即可。此后可直接从 Dock 或启动台打开。</p></div>
+      </div>
+    </div>
+    <div class="callout">
+      <strong>关于签名与系统提示：</strong>当前版本为 ad-hoc 签名，macOS Gatekeeper 可能提示「无法验证开发者」。这属于未加入 Apple Developer Program 的独立分发方式，不代表文件被篡改；请始终从本页或本项目 GitHub 仓库获取安装包，并核对上面的 SHA-256。应用不请求管理员权限、不安装后台服务、不访问用户数据目录以外的位置。
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom:0">
+    <div class="section-head reveal">
+      <span class="kicker">系统要求</span>
+      <h2>请确认设备环境。</h2>
+    </div>
+    <table class="spec reveal" style="max-width:760px;margin:0 auto">
+      <tr><th>操作系统</th><td>macOS 15 或更高版本</td></tr>
+      <tr><th>处理器</th><td>Apple Silicon（本机构建与验证环境）</td></tr>
+      <tr><th>网络</th><td>完全离线可用；仅在主动配置云端 AI 后端时需要网络</td></tr>
+      <tr><th>账号</th><td>不需要注册或登录</td></tr>
+      <tr><th>磁盘空间</th><td>约 10 MB</td></tr>
+    </table>
+  </section>
+
+  <section class="section gray" style="padding:72px 0;margin-top:88px;border-radius:24px">
+    <div class="section-head reveal" style="margin-bottom:28px">
+      <span class="kicker">验证与反馈</span>
+      <h2>下载安心，问题可反馈。</h2>
+      <p>安装包由本项目直接提供，可通过校验值确认文件完整性。</p>
+    </div>
+    <div style="max-width:760px;margin:0 auto">
+      <pre class="code mono reveal">cd ~/Downloads
+shasum -a 256 ouom-0.1.0.zip
+# 应与上方 SHA-256 一致</pre>
+      <p class="note" style="text-align:center">使用中遇到问题，或希望提出功能建议，欢迎通过 <a href="https://github.com/apple-PC/ouom/issues" target="_blank" rel="noopener" style="color:var(--blue)">GitHub Issues</a> 反馈。</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom:0">
+    <div class="section-head reveal">
+      <span class="kicker">更新日志</span>
+      <h2>0.1.0</h2>
+      <p>2026 年 11 月 14 日</p>
+    </div>
+    <div class="grid grid-2 reveal" style="max-width:820px;margin:0 auto">
+      <div class="card">
+        <h3>核心能力</h3>
+        <p>多标签浏览、地址栏与历史收藏、原生右键菜单、紧凑工具栏；AI 助手、轻量办公套件、学习工作台与新标签页门户。</p>
+      </div>
+      <div class="card">
+        <h3>设备端智能</h3>
+        <p>共享小模型成为默认本地后端；ouom.study.v2 格式契约支持答案、解析、步骤与考查要点；AI 答疑基于本地题库检索。</p>
+      </div>
+      <div class="card">
+        <h3>数据可靠性</h3>
+        <p>统一本机数据目录、原子写入、上一版本备份、损坏自动恢复、文件权限收紧与写入诊断；设置页可查看完整清单。</p>
+      </div>
+      <div class="card">
+        <h3>设置中心</h3>
+        <p>按操作对象分层的侧栏导航，凭据不回显明文、可移除；数据与隐私页展示存放位置、占用、备份状态与清理入口。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="../index.html">产品介绍</a>
+      <a href="./">下载</a>
+      <a href="https://github.com/apple-PC/ouom">GitHub</a>
+      <a href="https://afdian.com/a/apple-pc">爱发电</a>
+    </div>
+    <div>ouom · observable universe on mac · 0.1.0</div>
+    <div>由 apple-pc（天天向上）制作 · 采用 MIT 许可发布</div>
+  </div>
+</footer>
+
+<!-- 爱发电 · 固定底部说明条 -->
+<div class="afd-bar">
+  <span class="heart">♥</span>
+  <span>喜欢 ouom？可在 <a href="https://afdian.com/a/apple-pc" target="_blank" rel="noopener">爱发电</a> 支持作者，帮助我们持续完善。</span>
+</div>
+
+<!-- 爱发电 · 首次访问可关闭弹窗 -->
+<div class="afd-overlay" id="afdOverlay" role="dialog" aria-modal="true" aria-label="支持 ouom">
+  <div class="afd-card">
+    <button class="close" type="button" aria-label="关闭" data-afd-dismiss>×</button>
+    <div class="emblem">♥</div>
+    <h3>支持 ouom 的持续开发</h3>
+    <p>ouom 是独立开发的免费项目。如果它让你的工作与学习更顺手，欢迎通过爱发电给予支持。</p>
+    <a class="afd-primary" href="https://afdian.com/a/apple-pc" target="_blank" rel="noopener" data-afd-dismiss style="line-height:44px">前往爱发电</a>
+    <button class="afd-later" type="button" data-afd-dismiss>暂不，先看看</button>
+  </div>
+</div>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>
