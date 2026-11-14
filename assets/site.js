@@ -30,8 +30,10 @@
 
   var shown = false;
   try { shown = window.localStorage.getItem(KEY) === '1'; } catch (e) { shown = false; }
-  if (!shown) {
-    window.setTimeout(function () { overlay.classList.add('show'); }, 1100);
+  // 分享链接可加 ?afd=off 跳过提示，便于嵌入预览或截图；不写入记忆状态。
+  var skip = /[?&]afd=off(?:&|$)/.test(window.location.search);
+  if (!shown && !skip) {
+    window.setTimeout(function () { overlay.classList.add('show'); }, 1600);
   }
 
   overlay.addEventListener('click', function (e) {
